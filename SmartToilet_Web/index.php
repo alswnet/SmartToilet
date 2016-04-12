@@ -7,7 +7,7 @@ require_once("conexion.php");
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <title>Servicio</title>
+  <title>SmartToilet</title>
 </head>
 <body>
 
@@ -20,13 +20,13 @@ require_once("conexion.php");
         <th>Fecha</th>
       </tr>
       <?php
-      $sql = "SELECT * FROM tabla_descargas";
-      $res = mysql_query($sql,$con);
+      $Sql = "SELECT * FROM tabla_descargas";
+      $Res = mysql_query($sql,$Con);
       while ($reg = mysql_fetch_array($res)) {
         ?>
         <tr>
-          <td><?php echo $reg['id']; ?></td>
-          <td><?php echo $reg['hora_descarga']; ?></td>
+          <td><?php echo $Reg['id']; ?></td>
+          <td><?php echo $Reg['hora_descarga']; ?></td>
         </tr>
         <?php } ?>
       </table>
